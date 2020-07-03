@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.company.AppFrame">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="5" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="886" height="601"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="8c3b0" class="javax.swing.JLabel" binding="inputTreeLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Дерево в скобочной нотации:"/>
+        </properties>
+      </component>
+      <component id="8b3fc" class="javax.swing.JTextField" binding="textFieldBracketNotationTree">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="450" height="30"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ccddf" class="javax.swing.JButton" binding="buttonPreOrderTraverse">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Прямой обход"/>
+        </properties>
+      </component>
+      <component id="e00e0" class="javax.swing.JButton" binding="buttonInOrderTraverse">
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Симметричный обход"/>
+        </properties>
+      </component>
+      <component id="51aed" class="javax.swing.JButton" binding="buttonPostOrderTraverse">
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Обратный обход"/>
+        </properties>
+      </component>
+      <component id="f9a8" class="javax.swing.JButton" binding="buttonByLevelTraverse">
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Обход в ширину"/>
+        </properties>
+      </component>
+      <component id="3ab37" class="javax.swing.JButton" binding="createTreeButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Построить дерево"/>
+        </properties>
+      </component>
+      <grid id="291c6" binding="panelPaintArea" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <vspacer id="39f61">
+            <constraints border-constraint="Center"/>
+          </vspacer>
+        </children>
+      </grid>
+      <scrollpane id="931bf">
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="2" indent="0" use-parent-layout="false">
+            <preferred-size width="300" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="57d8d" class="javax.swing.JTextArea" binding="outputResultTextArea">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="70d16" class="javax.swing.JButton" binding="toBracketNotationButton">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="В скобочное представление"/>
+        </properties>
+      </component>
+      <component id="9c87b" class="javax.swing.JButton" binding="deleteNodesButton">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Удалить узлы с одним потомком"/>
+        </properties>
+      </component>
+      <component id="99db0" class="javax.swing.JButton" binding="saveImageButton">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Сохранить изображение в SVG"/>
+        </properties>
+      </component>
+      <component id="d0535" class="javax.swing.JButton" binding="loadTreeButton">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Загрузить скоб.представление"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
